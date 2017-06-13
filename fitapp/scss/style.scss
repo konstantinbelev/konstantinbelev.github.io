@@ -1,0 +1,395 @@
+@import "_reset";
+@import "_normalize";
+@import "_variables";
+@import "_mixins";
+@font-face {
+    font-family: 'Segoe UI';
+    src: url("../fonts/segoeui.ttf");
+}
+
+//General
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #fafafa;
+    overflow-x: hidden;
+}
+
+//Navbar
+
+.navbar-brand{
+    position: relative;
+    top: -25px;
+    h1{
+        font-family: 'Segoe UI', sans-serif;
+        color: $secondary-color;
+    }
+}
+
+.navbar-default{
+    background-color: transparent;
+    border: none;
+}
+
+.navbar-default .navbar-nav > li > a {
+    padding-left: 40px;
+    color: $secondary-color;
+    @include transition;
+    &:focus{
+        color: darken($secondary-color, 70%);
+    }
+}
+
+nav{
+    .btn-download{
+        position: relative;
+        top: 10px;
+        color: $main-color !important;
+        font-weight: bold;
+        padding: 6px 24px !important;
+        margin-left: 40px;
+        border-radius: 24px;
+        @include transition;
+        &:hover{
+            background-color: darken($secondary-color, 10%) !important;
+        }
+    }
+}
+
+
+//Header
+
+.header{
+    background-image: url("../images/fruits-header.jpg");
+    //background-attachment: fixed;
+    background-repeat: no-repeat;
+    //background-position: 50% 50%;
+    @include background-cover;
+}
+
+.logo{
+    margin-top: 150px;
+}
+
+.header-container{
+    .text-inner{
+        h2{
+            margin-top: 50px;
+            font-size: 48px;
+            color: $secondary-color;
+            span{
+                font-weight: bold;
+            }
+        }
+        p{
+            margin-top: 20px;
+            font-size: 18px;
+            color: $secondary-color;
+        }
+    }
+}
+
+.download{
+    margin-top: 60px;
+}
+
+// Features
+
+#features{
+    background-color: $secondary-color;
+    padding: 100px 0;
+    .text-inner{
+        margin-top: 200px;
+        h2{
+            color: #5a5a5a;
+            font-size: 48px;
+            font-weight: 300;
+        }
+        span{
+            color: $main-color;
+        }
+        p{
+            margin-top: 20px;
+            color: #5a5a5a;
+            font-size: 18px;
+            font-weight: 300;
+        }
+    }
+    img{
+        //margin-top: 100px;
+    }
+}
+
+//Meals
+
+#meals{
+    padding: 100px 0;
+    .text-inner{
+        margin-bottom: 100px;
+        h2{
+            color: #5a5a5a;
+            font-size: 48px;
+            font-weight: 300;
+        }
+        span{
+            color: $main-color;
+        }
+        p{
+            margin-top: 20px;
+            color: #5a5a5a;
+            font-size: 18px;
+            font-weight: 300;
+        }
+    }
+    .two{
+        margin-bottom: 0;
+        margin-top: 250px;
+    }
+
+    .products{
+        font-size: 14px;
+        margin-top: 150px;
+    }
+    .product-one{
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        position: relative;
+        left: 50px;
+        h3{
+            color: $main-color;
+            font-weight: 600;
+        }
+        p{
+            margin: 5px 0;
+            font-weight: 300;
+        }
+        .calories{
+            color: $main-color;
+            font-weight: 500;
+        }
+        .time-apple{
+            font-size: 25px;
+            color: #b4b4b4;
+            font-weight: bold;
+        }
+        span{
+            float: right;
+            color: #b4b4b4;
+            font-size: 15px;
+        }
+    }
+    .product-two{
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        h3{
+            color: $main-color;
+            font-weight: 600;
+        }
+        p{
+            margin: 5px 0;
+            font-weight: 300;
+        }
+        .calories{
+            color: $main-color;
+            font-weight: 500;
+        }
+        .time{
+            font-size: 25px;
+            color: $main-color;
+            font-weight: bold;
+        }
+        span{
+            float: right;
+            color: #b4b4b4;
+            font-size: 15px;
+        }
+    }
+    .product-three{
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        position: relative;
+        left: 50px;
+        h3{
+            color: $main-color;
+            font-weight: 600;
+        }
+        p{
+            margin: 5px 0;
+            font-weight: 300;
+        }
+        .calories{
+            color: $main-color;
+            font-weight: 500;
+        }
+        .time{
+            font-size: 25px;
+            color: $main-color;
+            font-weight: bold;
+        }
+        span{
+            float: right;
+            color: #b4b4b4;
+            font-size: 15px;
+        }
+    }
+
+}
+
+footer{
+    height: 443px;
+    background-image: url(../images/fruits-footer.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    @include background-cover;
+    .text-inner{
+        margin-top: 120px;
+        h2{
+            font-size: 48px;
+            font-weight: 300;
+            color: $secondary-color;
+            span{
+                font-weight: bold;
+            }
+        }
+        p{
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: 300;
+            color: $secondary-color;
+        }
+        .btn-download{
+            color: $main-color !important;
+            font-weight: bold;
+            padding: 6px 90px !important;
+            margin-top: 50px;
+            border-radius: 24px;
+            @include transition;
+            &:hover{
+                background-color: darken($secondary-color, 10%) !important;
+            }
+        }
+    }
+}
+
+// Media Queries
+
+@media only screen and (max-width: 767px) {
+    .navbar-toggle{
+        background-color: white;
+    }
+    .logo{
+        margin: 0;
+        img{
+            display: block;
+            margin: 0 auto;
+        }
+
+    }
+    .header-container{
+        .text-inner{
+            text-align: center;
+            h2{
+                margin-top: 20px;
+                font-size: 40px;
+            }
+            p{
+                margin-top: 20px;
+                font-size: 14px;
+            }
+        }
+    }
+    .download{
+        margin-top: 20px;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    .iphone img {
+        display: none;
+    }
+    .products{
+        margin-top: 50px !important;
+    }
+    .product-one{
+        left: 0 !important;
+    }
+    .product-three{
+        left: 0 !important;
+    }
+    #features{
+        padding: 50px 0;
+        .text-inner{
+            margin-top: 50px;
+        }
+    }
+    #meals{
+        padding: 50px 0;
+        .two{
+            margin-top: 50px;
+        }
+    }
+    footer{
+        padding-bottom: 50px;
+    }
+}
+
+/* Small Devices And Tablets */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    #navbar{
+        a{
+            position: relative;
+            right: 50px;
+        }
+    }
+    .navbar-brand{
+        left: 310px;
+    }
+    .header-container{
+        .text-inner{
+            text-align: center;
+        }
+    }
+    .logo{
+        margin: 0;
+        img{
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .download{
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .iphone {
+        display: none;
+    }
+
+    .products{
+        margin-top: 50px !important;
+    }
+    .product-one{
+        left: 0 !important;
+    }
+    .product-three{
+        left: 0 !important;
+    }
+    #features{
+        padding: 50px 0;
+        .text-inner{
+            margin-top: 50px;
+            text-align: center;
+        }
+    }
+    #meals{
+        padding: 50px 0;
+        .text-inner{
+            text-align: center;
+        }
+        .two{
+            margin-top: 50px;
+        }
+    }
+}
