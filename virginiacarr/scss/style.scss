@@ -6,7 +6,7 @@
 //General
 body{
     font-family: 'Open Sans', sans-serif;
-    background-color: #fafafa;
+    background-color: #fff;
     overflow-x: hidden;
 }
 
@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1{
-    font-size: 4em;
+    font-size: 2.5em;
 }
 
 h2{
@@ -49,7 +49,7 @@ h3{
 }
 
 section{
-    padding: 50px 0;
+    padding: 40px 0;
 }
 
 i{
@@ -128,35 +128,34 @@ i{
         width: 100px;
     }
     .btn{
-            margin-top: 20px;
+            margin-top: 10px;
         }
     p{
         font-size: 1.6em;
         font-weight: 300;
     }
     .container-two{
-        padding: 80px 0;
+        padding: 60px 0;
     }
 }
 
 //About
 #about{
+    background: $main-color;
+    color: white;
     hr{
         border-top: 3px solid $main-color;
         width: 100px;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 }
 
 //Services
-
 #services{
-    background: $main-color;
-    color: white;
     hr{
         border-top: 3px solid white;
         width: 100px;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 }
 
