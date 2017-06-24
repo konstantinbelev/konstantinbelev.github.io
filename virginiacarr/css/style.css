@@ -305,8 +305,6 @@ i {
 .header {
   background: #2980b9;
   color: white; }
-  .header img {
-    border-radius: 50%; }
   .header hr {
     border-top: 3px solid white;
     width: 100px; }
@@ -322,12 +320,15 @@ i {
   background: #2980b9;
   color: white; }
   #about hr {
-    border-top: 3px solid #2980b9;
+    border-top: 3px solid white;
     width: 100px;
     margin-bottom: 30px; }
+  #about ul li {
+    list-style: inside;
+    padding: 7px 0; }
 
 #services hr {
-  border-top: 3px solid white;
+  border-top: 3px solid #2980b9;
   width: 100px;
   margin-bottom: 30px; }
 

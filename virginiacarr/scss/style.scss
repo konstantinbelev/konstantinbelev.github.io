@@ -120,9 +120,6 @@ i{
 .header{
     background: $main-color;
     color: white;
-    img{
-        border-radius: 50%;
-    }
     hr{
         border-top: 3px solid white;
         width: 100px;
@@ -144,16 +141,22 @@ i{
     background: $main-color;
     color: white;
     hr{
-        border-top: 3px solid $main-color;
+        border-top: 3px solid white;
         width: 100px;
         margin-bottom: 30px;
+    }
+    ul{
+        li{
+            list-style: inside;
+            padding: 7px 0;
+        }
     }
 }
 
 //Services
 #services{
     hr{
-        border-top: 3px solid white;
+        border-top: 3px solid $main-color;
         width: 100px;
         margin-bottom: 30px;
     }
