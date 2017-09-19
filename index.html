@@ -4,51 +4,41 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="My personal website.">
+    <meta name="description" content="Konstantin Belev is a Frontend Web Developer from Cologne.">
     <meta name="keywords" content="web, design, html, css, html5, css3, javascript, jquery, bootstrap, development">
     <title>Konstantin Belev | Web Developer</title>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <!-- Google Font -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Sanchez:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet" type="text/css">
     <!-- Animate CSS -->
     <link rel="stylesheet" href="css/animate.css">
 
   </head>
     <body id="page-top">
-        <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <nav id="mainNav" class="navbar navbar-default navigation">
           <div class="container-fluid">
               <!-- Brand and toggle get grouped for better mobile display -->
               <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                      <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                  </button>
-                  <a class="navbar-brand page-scroll" href="#page-top">Konstantin Belev</a>
+                  <a class="navbar-brand page-scroll" href="#page-top"><img id="logo" src="img/logo.png" alt="logo"></a>
               </div>
 
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav navbar-right">
                       <li>
-                          <a class="page-scroll" href="#page-top">Home</a>
+                          <a href="mailto:konstantinbelev@protonmail.com" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a>
                       </li>
                       <li>
-                          <a class="page-scroll" href="#services">Services</a>
+                          <a href="https://www.linkedin.com/in/konstantin-belev/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
                       </li>
                       <li>
-                          <a class="page-scroll" href="#portfolio">Portfolio</a>
-                      </li>
-                      <li>
-                          <a class="page-scroll" href="#skills">Skills</a>
-                      </li>
-                      <li>
-                          <a class="page-scroll" href="#contact">Contact</a>
+                          <a href="https://github.com/konstantinbelev" target="_blank"><i class="fa fa-github fa-2x"></i></a>
                       </li>
                   </ul>
               </div>
@@ -59,223 +49,131 @@
 
       <!-- Header -->
       <header>
-          <div class="header-content">
-              <div class="header-content-inner">
-                  <h2 id="homeHeading">Front-end Web Developer</h2>
-                  <p>Creating high quality responsive websites and providing exceptional user experience</p>
-                  <a href="#about" class="btn btn-primary btn-xl page-scroll">Learn More</a>
-              </div>
+        <div class="header-content">
+          <div class="header-content-inner">
+            <h2 id="title" class="wow fadeInUp">Konstantin Belev</h2>
+            <p class="wow fadeInUp" data-wow-delay="0.6s">Frontend Web Developer</p>
+            <a href="#services" class="btn btn-primary btn-xl page-scroll button wow fadeInUp" data-wow-delay="0.8s">Learn More</a>
           </div>
+        </div>
       </header>
       <!-- /end Header -->
 
-      <!-- About Section -->
-      <section class="bg-primary" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Want to hire me?</h2>
-                    <hr class="light">
-                    <p class="text-faded">I'm currently accepting new projects and would love to hear about yours. Please take a few minutes to tell me about it.</p>
-                    <a href="#contact" class="page-scroll btn btn-default btn-xl sr-button">Get in Touch!</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- /end About Section -->
-
-
-
-
-    <!-- Services Section-->
-    <section class="services" id="services">
-     <div class="container">
-             <div class="row">
-                 <h2 class="text-center">Services</h2>
-                 <hr>
-                   <div class="col-md-4 text-center">
-                       <div class="service-box">
-                         <i class="fa fa-code fa-5x"></i>
-                         <h3>Website Development</h3>
-                         <p>A website should be an investment that gets you more customers, grows your business, and works across all devices. There's more to the web than design and code, and that's exactly what I offer.</p>
-                       </div>
-                   </div>
-                   <div class="col-md-4 text-center">
-                       <div class="service-box">
-                         <i class="fa fa-paint-brush fa-5x"></i>
-                         <h3>WordPress/Bootstrap Customization</h3>
-                         <p>If you can't afford to pay for a design from scratch, then I can customize a WordPress or a Bootstrap template to fit your ideas.</p>
-                       </div>
-                   </div>
-                   <div class="col-md-4 text-center">
-                       <div class="service-box">
-                         <i class="fa fa-mobile fa-5x"></i>
-                         <h3>Responsive Website Design</h3>
-                         <p>Having a responsive layout means that your website fluidly resizes for optimal viewing regardless of the screen size or device, which is important because a lot of the traffic comes from mobile devices.</p>
-                        </div>
-                   </div>
-                 </div>
-               </div>
-             </div>
-    </section>
-    <!-- /end Services Section -->
-
-    <!-- Portfolio Section -->
-    <section id="portfolio">
+      <!-- Services -->
+      <section id="services">
         <div class="container-fluid">
-            <h2 class="text-center">Portfolio</h2>
+          <div class="row">
+            <h2 class="text-center">Services</h2>
             <hr>
-            <div class="row portfolio-one">
-                <div class="col-md-6 image-one wow fadeInLeft">
-                    <a href="https://konstantinbelev.github.io/">
-                        <img src="img/portfolio.jpg" class="img-responsive" alt="portfolio-pic-1" width="400px" height="185px">
-                    </a>
-                </div>
-                <div class="col-md-6 wow fadeInRight">
-                    <h2 class="text-center">Portfolio</h2>
-                    <p class="text-center">This is a single-page, responsive website built with HTML5, CSS3, Less, Bootstrap, and jQuery. This portfolio also has smooth scrolling, scroll reveal, and animations.</p>
-                    <ul class="text-center">
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>Bootstrap</li>
-                        <li>JavaScript</li>
-                        <li>jQuery</li>
-                        <li>Less</li>
-                    </ul>
-                    <a href="https://github.com/konstantinbelev/konstantinbelev.github.io" target="_blank" class="page-scroll btn btn-default btn-sm sr-button">View on GitHub</a>
-                    <a href="https://konstantinbelev.github.io/" target="_blank" class="page-scroll btn btn-default btn-sm sr-button">Visit Site</a>
-                </div>
+            <div class="col-md-4 text-center">
+              <h3>Frontend Development</h3>
+              <i class="fa fa-desktop fa-2x"></i>
+              <p>A website should be an investment that gets you more customers, grows your business, and works across all devices. There's more to the web than design and code, and that's exactly what I offer.</p>
             </div>
-            <div class="row portfolio-one">
-                <div class="col-md-6 image-two wow fadeInLeft">
-                        <a href="https://konstantinbelev.github.io/fitapp/" target="_blank"><img src="img/fitapp.jpg" class="img-responsive" alt="portfolio-pic-2" width="400px" height="185px"></a>
-                </div>
-                <div class="col-md-6 wow fadeInRight" >
-                    <h2 class="text-center">Fitapp</h2>
-                    <p class="text-center">I converted the <a class="psd" href="https://symu.co/freebies/templates-4/fitapp-psd-template/ target="_blank"">FitApp Template</a> from PSD to HTML by using Bootstrap's grid system and Sass. The website is responsive for mobile devices.</p>
-                    <ul class="text-center">
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>Bootstrap</li>
-                        <li>Sass</li>
-                    </ul>
-                    <a href="https://github.com/konstantinbelev/konstantinbelev.github.io/tree/master/fitapp" target="_blank" class="page-scroll btn btn-default btn-sm sr-button">View on GitHub</a>
-                    <a href="https://konstantinbelev.github.io/fitapp/" target="_blank" class="page-scroll btn btn-default btn-sm sr-button">Visit Site</a>
-                </div>
+            <div class="col-md-4 text-center">
+              <h3>Mobile Deployment</h3>
+              <i class="fa fa-mobile fa-2x"></i>
+              <p>Having a responsive layout means that your website fluidly resizes for optimal viewing regardless of the screen size or device, which is important because a lot of the traffic comes from mobile devices..</p>
             </div>
-            <div class="row portfolio-one">
-                <div class="col-md-6 image-one wow fadeInLeft">
-                    <a href="http://vcarrnotaryservices.com/">
-                        <img src="img/virginiacarr.jpg" class="img-responsive" alt="portfolio-pic-3" width="400px" height="250px">
-                    </a>
-                </div>
-                <div class="col-md-6 wow fadeInRight">
-                    <h2 class="text-center">Virginia Carr</h2>
-                    <p class="text-center">This is a portfolio website for Virginia Carr, who is a Public Notary. Shte wanted the site to be simple, but also professional looking. The website was made using Bootstrap 3 and it has smooth scrolling.</p>
-                    <ul class="text-center">
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>Bootstrap</li>
-                        <li>JavaScript</li>
-                        <li>jQuery</li>
-                        <li>Sass</li>
-                    </ul>
-                    <a href="https://github.com/konstantinbelev/virginiacarr" target="_blank" class="page-scroll btn btn-default btn-sm sr-button">View on GitHub</a>
-                    <a href="http://vcarrnotaryservices.com/" target="_blank" class="page-scroll btn btn-default btn-sm sr-button">Visit Site</a>
-                </div>
+            <div class="col-md-4 text-center">
+              <h3>UX / UI Design</h3>
+              <i class="fa fa-paint-brush fa-2x"></i>
+              <p>I sketch and wireframe interfaces focusing on content structure, intuitive UI patterns and simple interactions. I'm a minimalist who truly believes that less is more.</p>
             </div>
-        </div> <!-- /end container -->
-    </section>
-<!-- /end Portfolio Section -->
+          </div>
+        </div>
+      </section>
+      <!-- /end Services -->
 
-    <!-- Skills -->
-    <section>
-        <div class="container-fluid text-center">
-            <div id="skills">
-                <h2>Coding Skills</h2>
-                <hr>
-                <div class="row">
-                    <ul class="wow fadeInLeft">
-                        <li class="col-md-4 col-sm-4 col-xs-12">
-                            <img src="img/html.png" alt="html-logo" height="85" width="80">
-                            <h4>HTML5</h4>
-                        </li>
-                        <li class="col-md-4 col-sm-4 col-xs-12">
-                            <img src="img/css.png" alt="css-logo" height="85" width="80">
-                            <h4>CSS3</h4>
-                        </li>
-                        <li class="col-md-4 col-sm-4 col-xs-12">
-                            <img src="img/bootstrap.png" alt="bootstrap-logo" height="85" width="80">
-                            <h4>Bootstrap</h4>
-                        </li>
-                    </ul>
-                </div>
-                <div class="row">
-                    <ul class="wow fadeInRight">
-                        <li class="col-md-4 col-sm-4 col-xs-12">
-                            <img src="img/sass.png" alt="sass-logo" height="85" width="80">
-                            <h4>SASS</h4>
-                        </li>
-                        <li class="col-md-4 col-sm-4 col-xs-12">
-                            <img src="img/jquery.png" alt="jquery-logo" height="85" width="80">
-                            <h4>jQuery</h4>
-                        </li>
-                        <li class="col-md-4 col-sm-4 col-xs-12">
-                            <img src="img/wordpress.png" alt="wordpress-logo" height="85" width="80">
-                            <h4>WordPress</h4>
-                        </li>
-                    </ul>
-                </div>
+      <!-- Portfolio -->
+      <section id="portfolio">
+        <div class="container">
+          <h2 class="text-center">Portfolio</h2>
+          <hr>
+          <div class="row portfolio-item-1">
+            <div class="col-md-6 ">
+              <h3 class="project-title">FitApp</h3>
+              <ul class="project-tags">
+                <li>PSD to HTML conversion</li>
+              </ul>
+              <p>I converted the FitApp Template from PSD to HTML by using Bootstrap's grid system and Sass. The website is responsive for mobile devices.</p>
+              <a href="https://konstantinbelev.github.io/fitapp/" class="btn btn-primary btn-xl page-scroll button">Visit Website</a>
+            </div>
+            <div class="col-md-6">
+              <img class="img-responsive fitapp" src="img/fitapp.png" alt="portfolio-1">
+            </div>
+          </div>
+          <hr class="separator">
+            <div class="row">
+              <div class="col-md-6  portfolio-item-2">
+                <h3 class="project-title">Interactive Agency</h3>
+                <ul class="project-tags">
+                  <li>PSD to HTML conversion</li>
+                </ul>
+                <p>I converted the Interactive Agency Template from PSD to HTML by using Bootstrap's grid system and Sass. The website is responsive for mobile devices.</p>
+                <a href="https://konstantinbelev.github.io/agency-final/" class="btn btn-primary btn-xl page-scroll button">Visit Website</a>
+              </div>
+              <div class="col-md-6">
+                <img class="img-responsive" src="img/agency.png" alt="portfolio-2">
+              </div>
             </div>
         </div>
-    </section>
-    <!-- /end Skills -->
+      </section>
+      <!-- /end Portfolio -->
 
-    <!-- Contact -->
-    <section id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-10 col-lg-offset-1 text-center">
-                        <h4><strong>Contact Me</strong></h4>
-                        <hr class="small">
-                        <ul class="list-inline">
-                            <li>
-                                <a href="https://www.linkedin.com/in/konstantin-belev/" target="_blank"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
-                            </li>
-                            <li>
-                                <a href="mailto:becks050996@gmail.com" target="_blank"><i class="fa fa-envelope-o fa-fw fa-3x"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/Becks0509" target="_blank"><i class="fa fa-github fa-fw fa-3x"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+      <!-- Contact -->
+      <section id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center">
+              <h2>Want to get in touch?</h2>
+              <p>I'm currently accepting new projects and would love to hear about yours, so don't hesitate to contact me.</p>
+              <a href="mailto:konstantinbelev@protonmail.com" target="_blank" class="btn btn-primary btn-xl page-scroll button">Write an E-Mail</a>
             </div>
-        </section>
-        <!-- /end Contact -->
+          </div>
+        </div>
+      </section>
+      <!-- /end Contact -->
 
-        <!-- Footer -->
-        <footer>
-            <p class="text-muted text-center">Copyright &copy; 2017 Konstantin Belev</p>
-        </footer>
-        <!-- /end Footer -->
-
-
+      <!-- Footer -->
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 text-center">
+              <ul class="list-inline">
+                <li>
+                  <a href="impressum.html"><i class="fa fa-gavel"></i>Impressum (German)</a>
+                </li>
+                  <li>
+                      <a href="mailto:konstantinbelev@protonmail.com" target="_blank"><i class="fa fa-envelope-o"></i></a>
+                  </li>
+                  <li>
+                      <a href="https://www.linkedin.com/in/konstantin-belev/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  </li>
+                  <li>
+                      <a href="https://github.com/konstantinbelev" target="_blank"><i class="fa fa-github"></i></a>
+                  </li>
+              </ul>
+            </div>
+            <div class="col-md-4 text-center">
+              <p class="text-muted text-center">Copyright &copy; 2017 Konstantin Belev</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <a href="#mainNav"><i class="fa fa-chevron-up"></i></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- /end Footer -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    <!-- Scroll Reveal -->
-    <script src="js/scrollreveal.min.js"></script>
-
-    <!-- Add Wow js library -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- WoW JS -->
     <script src="js/wow.min.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/functions.min.js"></script>
-
+    <script>
+    new WOW().init();
+    </script>
   </body>
 </html>
